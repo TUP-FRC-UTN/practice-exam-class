@@ -1,0 +1,114 @@
+<div class="container mt-4">
+    <!-- Título del formulario -->
+    <h2 class="mb-4">Crear Nueva Orden</h2>
+
+    <!-- Formulario principal -->
+    <form>
+        <!-- Sección de datos del cliente -->
+        <div class="row mb-4">
+            <!-- Campo Nombre -->
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Nombre:</label>
+                <input type="text" class="form-control" >            
+            </div>
+
+            <!-- Campo Email -->
+            <div class="col-md-6 mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" >
+            </div>
+        </div>
+
+        <!-- Sección de productos -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Productos</h5>
+                    <button type="button" class="btn btn-primary">
+                        +
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <!-- Lista de productos -->
+                <div >
+                        <div class="row mb-3">
+                            <!-- Selector de producto -->
+                            <div class="col-md-3">
+                                <label class="form-label">Producto</label>
+                                <select class="form-select" >
+                                    <option value="">Select Product</option>
+                                </select>
+                            </div>
+
+                            <!-- Campo cantidad -->
+                            <div class="col-md-2">
+                                <label class="form-label">Cantidad</label>
+                                <input type="number" class="form-control" >
+                            </div>
+
+                            <!-- Campo precio (readonly) -->
+                            <div class="col-md-2">
+                                <label class="form-label">Precio</label>
+                                <input type="number" class="form-control"  readonly>
+                            </div>
+
+                            <!-- Campo stock (readonly) -->
+                            <div class="col-md-2">
+                                <label class="form-label">Stock</label>
+                                <input type="number" class="form-control"  readonly>
+                            </div>
+
+                            <!-- Botón eliminar -->
+                            <div class="col-md-1 d-flex align-items-end">
+                                <button type="button" class="btn btn-danger">
+                                    X
+                                </button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de productos seleccionados -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Productos Seleccionados</h5>
+            </div>
+            <div class="card-body">
+                <ul>
+                        <li>
+                            Producto Nuevo - Cantidad: 2 - Precio: 1500 - Stock:
+                           55
+                        </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Sección de total -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 offset-md-6">
+                        <div class="d-flex justify-content-between">
+                            <strong>Total:</strong>
+                            <span>1500</span>
+                        </div>
+                            <div class="text-success mt-2">
+                                10% descuento aplicado!
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Botones de acción -->
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary">
+               Crear orden
+            </button>
+        </div>
+    </form>
+</div>
